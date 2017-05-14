@@ -57,4 +57,4 @@ final_data <- cbind(x_data, y_data, subject_data)
 
 tidy_data <- ddply(final_data, .(activity, subject), function(x) colMeans(x[, 1:66]))
 
-write.table(tidy_data, "tidy_data.csv", row.name=FALSE, sep = ",")
+write.table(tidy_data, "tidy_data.txt", row.name=FALSE)
